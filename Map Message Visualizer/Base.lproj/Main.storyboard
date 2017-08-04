@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eMO-qR-EL6">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,15 +18,73 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="K4e-5E-lwD"/>
+                    <navigationItem key="navigationItem" id="K4e-5E-lwD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DMJ-J5-FGf">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="-323"/>
+            <point key="canvasLocation" x="888.79999999999995" y="-323.38830584707648"/>
+        </scene>
+        <!--Detailed View Controller-->
+        <scene sceneID="11w-l9-LGC">
+            <objects>
+                <viewController id="8I4-Ja-qOZ" customClass="DetailedViewController" customModule="Map_Message_Visualizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="25x-Kf-Icn"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBh-nX-lOD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0PU-Zv-X6A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu1-n8-jM6" userLabel="PopUpView">
+                                <rect key="frame" x="16" y="120" width="288" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p3h-st-v5H">
+                                        <rect key="frame" x="0.0" y="88" width="288" height="144"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Positive.png" translatesAutoresizingMaskIntoConstraints="NO" id="82N-ml-lcQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="HNa-rC-PaK"/>
+                                            <constraint firstAttribute="width" constant="92" id="U7s-43-H0j"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="AlX-VC-HOZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="p3h-st-v5H" secondAttribute="bottom" constant="8" id="KXP-A2-jSa"/>
+                                    <constraint firstAttribute="height" constant="240" id="LYj-Y1-bn7"/>
+                                    <constraint firstItem="82N-ml-lcQ" firstAttribute="leading" secondItem="lu1-n8-jM6" secondAttribute="leading" id="MDN-fZ-ivY"/>
+                                    <constraint firstItem="82N-ml-lcQ" firstAttribute="top" secondItem="lu1-n8-jM6" secondAttribute="top" id="d3A-ez-E38"/>
+                                    <constraint firstItem="p3h-st-v5H" firstAttribute="top" secondItem="82N-ml-lcQ" secondAttribute="bottom" constant="8" id="eVS-zs-k7q"/>
+                                    <constraint firstItem="p3h-st-v5H" firstAttribute="centerX" secondItem="lu1-n8-jM6" secondAttribute="centerX" id="hOJ-SK-qfX"/>
+                                    <constraint firstItem="p3h-st-v5H" firstAttribute="leading" secondItem="lu1-n8-jM6" secondAttribute="leading" id="pyL-Od-2aL"/>
+                                    <constraint firstAttribute="trailing" secondItem="p3h-st-v5H" secondAttribute="trailing" id="xsy-bv-Lyg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3222388698630137" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lu1-n8-jM6" firstAttribute="centerY" secondItem="0PU-Zv-X6A" secondAttribute="centerY" id="VvB-ss-BOy"/>
+                            <constraint firstItem="lu1-n8-jM6" firstAttribute="centerX" secondItem="0PU-Zv-X6A" secondAttribute="centerX" id="yqs-jf-lXd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4C-vG-qsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608.75" y="-324.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="txl-fY-Psa">
@@ -47,4 +105,7 @@
             <point key="canvasLocation" x="111" y="-323"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Positive.png" width="196" height="195"/>
+    </resources>
 </document>
