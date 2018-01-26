@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8408FBBA1F3606A60054D706 /* UserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FBB91F3606A60054D706 /* UserReview.swift */; };
+		8408FBBC1F360E470054D706 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FBBB1F360E470054D706 /* DimmingPresentationController.swift */; };
 		84CB037A1F34C208000E57BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB03791F34C208000E57BA /* AppDelegate.swift */; };
 		84CB037C1F34C208000E57BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB037B1F34C208000E57BA /* MapViewController.swift */; };
 		84CB037F1F34C208000E57BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CB037D1F34C208000E57BA /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		2DE22A3FD53E3553258396E7 /* Pods_Map_Message_Visualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Map_Message_Visualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5213FE8918E5D54D65FD0D62 /* Pods-Map Message Visualizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map Message Visualizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Map Message Visualizer/Pods-Map Message Visualizer.debug.xcconfig"; sourceTree = "<group>"; };
+		8408FBB91F3606A60054D706 /* UserReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReview.swift; sourceTree = "<group>"; };
+		8408FBBB1F360E470054D706 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		84CB03761F34C208000E57BA /* Map Message Visualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map Message Visualizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB03791F34C208000E57BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84CB037B1F34C208000E57BA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841ACF251F368C5600A3EA7C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CB037B1F34C208000E57BA /* MapViewController.swift */,
+				84CB03921F34D62F000E57BA /* DetailedViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		841ACF261F368C6300A3EA7C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8408FBB91F3606A60054D706 /* UserReview.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		841ACF271F368C9400A3EA7C /* Presentation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8408FBBB1F360E470054D706 /* DimmingPresentationController.swift */,
+			);
+			name = "Presentation Controller";
+			sourceTree = "<group>";
+		};
+		841ACF2C1F36A80700A3EA7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CB03801F34C208000E57BA /* Assets.xcassets */,
+				84CB03821F34C208000E57BA /* LaunchScreen.storyboard */,
+				84CB03851F34C208000E57BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		84CB036D1F34C208000E57BA = {
 			isa = PBXGroup;
 			children = (
@@ -69,14 +108,13 @@
 		84CB03781F34C208000E57BA /* Map Message Visualizer */ = {
 			isa = PBXGroup;
 			children = (
-				84CB03911F34C229000E57BA /* Emotions */,
 				84CB03791F34C208000E57BA /* AppDelegate.swift */,
-				84CB037B1F34C208000E57BA /* MapViewController.swift */,
-				84CB03921F34D62F000E57BA /* DetailedViewController.swift */,
 				84CB037D1F34C208000E57BA /* Main.storyboard */,
-				84CB03801F34C208000E57BA /* Assets.xcassets */,
-				84CB03821F34C208000E57BA /* LaunchScreen.storyboard */,
-				84CB03851F34C208000E57BA /* Info.plist */,
+				841ACF251F368C5600A3EA7C /* ViewControllers */,
+				841ACF261F368C6300A3EA7C /* User */,
+				841ACF271F368C9400A3EA7C /* Presentation Controller */,
+				84CB03911F34C229000E57BA /* Emotions */,
+				841ACF2C1F36A80700A3EA7C /* Supporting Files */,
 			);
 			path = "Map Message Visualizer";
 			sourceTree = "<group>";
@@ -235,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8408FBBA1F3606A60054D706 /* UserReview.swift in Sources */,
+				8408FBBC1F360E470054D706 /* DimmingPresentationController.swift in Sources */,
 				84CB037C1F34C208000E57BA /* MapViewController.swift in Sources */,
 				84CB037A1F34C208000E57BA /* AppDelegate.swift in Sources */,
 				84CB03931F34D62F000E57BA /* DetailedViewController.swift in Sources */,
